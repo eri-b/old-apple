@@ -1,3 +1,42 @@
 /* CSS here */
+html, body{margin:0; padding:0;}
+body{font-family:sans-serif;}
+img{max-width:100%;}
+ul{list-style:none; margin:0; padding:0;}
 
-body{}
+nav{
+	position:fixed;
+	left:50%;
+	transform: translateX(-50%);
+	top:18px;
+	background:#ccc;
+	white-space: nowrap;
+}
+nav li{
+	display:inline-block; 
+	padding:20px 40px;
+}
+
+main{
+	background:url('../images/bg.jpg') 50% 100% no-repeat;;
+	background-size: cover;
+	height:70vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	color:white;
+	text-align: center;
+}
+main > div{
+	max-width:700px;
+	margin:0 auto;
+}
+
+main h1, main h2, main h3{font-weight:100; }
+main h1{font-size:48px;}
+main h2{font-size:24px;}
+
+.grid{display:flex;justify-content: space-between;}
+.grid > div{width:24.8%;}
+
+footer{background:gray;height:10vh;}
