@@ -1,0 +1,104 @@
+/* CSS here */
+html, body{margin:0; padding:0;}
+body{font-family:sans-serif;}
+img{max-width:100%;}
+ul{list-style:none; margin:0; padding:0;}
+a{text-decoration: none; color:inherit;}
+nav{
+	position:fixed;
+	left:50%;
+	transform: translateX(-50%);
+	top:18px;
+	background:#ccc;
+	width:980px;
+	border-radius:5px;
+	border:1px solid #7C7C7C;
+	box-sizing: border-box;
+	color:white;
+	font-size:13px;
+	 box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+	-webkit-font-smoothing: antialiased;
+	background-image: linear-gradient(#8A8A8A 0%, #707070 50%, #5E5E5E 51%, #797979 100%);
+}
+
+nav ul{
+	display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items:center;
+    
+}
+nav li{
+	display:inline-block; 
+	flex:auto;
+	text-align:center;
+}
+nav li a{
+	display:inline-block;
+	width:100%;
+	text-shadow:1px 1px #777;
+	padding:10px 0;
+}
+nav li:first-child a{
+	padding: 4px 0;
+}
+
+nav li:hover{
+	background-image: linear-gradient(#777 0%, #555 50%, #555 51%, #333 100%);
+}
+
+main{
+	background:url('images/bg.jpg') 50% 100% no-repeat;
+	background-size: cover;
+	height:70vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	color:white;
+	text-align: center;
+}
+main > div{
+	max-width:700px;
+	margin:0 auto;
+}
+
+main h1, main h2, main h3{
+	font-weight:100;
+	margin:20px 0px;
+}
+main h1{font-size:48px;}
+main h2{
+	font-size:24px;
+    line-height: 30px;
+}
+
+.grid{display:flex;justify-content: space-between;}
+.grid > div{
+	width:24.8%;
+	padding: 4px 0px;
+}
+
+footer{
+	max-width:980px;
+	margin:0 auto;
+	padding:15px 0px;
+	display:flex;
+	font-size:10px;
+	color:gray;
+}
+p{margin:5px 0px;}
+footer > div:first-child{
+	width:45%;
+}
+
+footer > div:last-child{
+	width:55%;
+}
+.noMargin{margin-top:0;}
+footer li{
+	display:inline-block;
+	padding:0 3px;
+}
+footer li a{
+	color:#2698D6;	
+}
